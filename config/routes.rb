@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   namespace :api do
@@ -5,7 +7,7 @@ Rails.application.routes.draw do
       resources :greetings
     end
   end
-  root "api/v1/greetings#index"
+  root 'api/v1/greetings#index'
   # Defines the root path route ("/")
   # root "articles#index"
 end
